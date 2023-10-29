@@ -1,8 +1,31 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Style the table */
+.my-table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-a {
-  color: #00B7FF;
+.my-table, .my-table tr, .my-table td {
+  border: 1px solid #000;
+}
+
+/* Style the table cells */
+.my-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+/* Add specific cell styles */
+.my-table td[style*="background-color: #FF0000;"] {
+  background-color: #FF0000;
+  color: #FFF;
+}
+
+.my-table td[style*="background-color: #00FF00;"] {
+  background-color: #00FF00;
+  color: #000;
+}
+
+.my-table td[style*="background-color: #0000FF;"] {
+  background-color: #0000FF;
+  color: #FFF;
 }
