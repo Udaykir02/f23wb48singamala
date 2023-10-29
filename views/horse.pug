@@ -5,8 +5,12 @@ block content
   - var horse_arr = [{ horse_name: "Midnight Shadow", horse_age: 6, horse_price: 5500 },{ horse_name: "Thunderbolt", horse_age: 5, horse_price: 4200 },{ horse_name: "Starry Night", horse_age: 4, horse_price: 6800 }]
   div(class="container-fluid")
     div(class="row")
-      each horse, index in horse_arr
-        div(class="col-sm-2", onclick=`buy(${index})`)
-          p #{horse.horse_name}
-          p Age: #{horse.horse_age}
-          p Price: $#{horse.horse_price}
+      each camera, index in horse_arr
+        div(class="col-sm-2" onclick = `buy(${index})`)
+          p #{camera.horse_name}
+          p age : #{camera.horse_age}
+          p Price: $#{camera.horse_price}
+    script.
+      function buy(a) {
+        alert("You purchased Item " + (a + 1));
+      }
